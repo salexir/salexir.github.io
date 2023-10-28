@@ -24,16 +24,12 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!-- Highlight JS CSS File -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/xcode.min.css">
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -70,10 +66,10 @@
 
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
+      <div class="container-fluid">
 
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>{data.hub} : A corporate website</h2>
+        <div class="blue-titles d-flex justify-content-between">
+          <h1>Projects: Data Hub</h1>
           <ol>
             <li><a href="index.html">Home</a></li>
             <li>{data.hub}</li>
@@ -81,43 +77,68 @@
         </div>
 
       </div>
+      
     </section><!-- End Breadcrumbs -->
 
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
+      <div class="container-fluid">
+        <div class="row">
 
-        <div class="row gy-4">
+          <div class="col-lg-1">
 
-          <div class="col-lg-8">
-            <div class="container" id="dh-vid">
-              <video autoplay="" class="container" controls=""><source src="assets/vid/dh3.webm" type="video/webm"> Your browser does not support the video tag.</video>
+            <div id="toc" class="list-group p-3" style="display:none;">
+              <a class="list-group-item list-group-item-action" href="#intro">What is/was datahub?</a>
             </div>
-            </div>
-      
 
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Goal</strong>: Internal facing SharePoint website</li>
-                <li><strong>Project date</strong>: 2017</li>
-                <li><strong>Project URL</strong>: Not publicly accessible.</li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>Description</h2>
-              <p>The requirement was to build something that looks and feels like a website, but in a corp. environment that used the Microsoft stack.
-                <br><br>This website was built with Bootstrap 4 and jQuery, on top of MS Sharepoint 2016. Basic masterpage templates were created and allows for content managers to add pages using SP without having to fiddle around with the codes too much.</p>
-                Blurred things out in this video capture, but it essentially demonstrates that a responsive intranet can be built within SharePoint.</p> <br>
-                <p>Final background is a picture of the <a href="https://en.wikipedia.org/wiki/Carcassonne">castle at Carcassone</a> that I took in 2017.</p>
-            </div>
           </div>
 
-        </div>
+          <div class="col-lg-10 vh-80 shadow bg-body rounded hide-scrollbars">
 
+            <div data-bs-spy="scroll" data-bs-target="#intro" data-bs-offset="0" tabindex="0">
+
+              <section class="section-title p-5">
+
+                <h2>A SharePoint website + Bootstrap 4</h2>
+
+                <p>The requirement was to build something that looks and feels like a website, but in a corp. environment that used the Microsoft stack. This was build in/around 2017.</p>
+
+                <ul>
+                  <li>Basic goal: A SharePoint website that doesn't look/feels like SharePoint<i>*cough*sharepoint ribbon*cough*</i></li>
+                  <li>This website was built with Bootstrap 4 and jQuery, on top of MS Sharepoint 2016.</li>
+                  <li>Basic masterpage templates were created and allows for content managers to add pages using SP without having to fiddle around with the codes too much.</li>
+                  <li>Zero budget :) Side-desk kind of activity</li>
+                  
+                </ul>
+
+              <p>In this screen-cap, I go through the major section of the site, showing responsiveness and that it does have the usual SharePoint overlay.Also blurred things out <i>by design</i></p>
+
+                <div class="container d-flex justify-content-center" id="dh-vid">
+                  <video class="w-75 shadow " controls=""><source src="assets/vid/dh3.webm" type="video/webm" > Your browser does not support the video tag.</video>
+                </div>
+
+                <blockquote class="m-3">Castle image at the end taken in 2017 in <a href="https://maps.app.goo.gl/HbExWXJo2wLpDrh59">Carcassone</a> around Toulouse.</blockquote>
+              
+            </section>
+
+              </div>
+
+              
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-1">
+            &nbsp;
+
+          </div>
+
+
+        </div>
+      
       </div>
+  
     </section><!-- End Portfolio Details Section -->
 
   </main><!-- End #main -->

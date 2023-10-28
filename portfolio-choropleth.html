@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Project: Choropleth + Dots - Salem Raman</title>
+  <title>Project: Datahub - Salem Raman</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -24,16 +24,12 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!-- Highlight JS CSS File -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/xcode.min.css">
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -70,10 +66,10 @@
 
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
+      <div class="container-fluid">
 
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>An RShiny Web App: Choropleth + Dots</h2>
+        <div class="blue-titles d-flex justify-content-between">
+          <h1>An RShiny Web App: Choropleth + Dots</h1>
           <ol>
             <li><a href="index.html">Home</a></li>
             <li>Choropleth + Dots</li>
@@ -81,46 +77,68 @@
         </div>
 
       </div>
+      
     </section><!-- End Breadcrumbs -->
 
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
+      <div class="container-fluid">
+        <div class="row">
 
-        <div class="row gy-4">
-          
+          <div class="col-lg-1">
 
+           &nbsp;
 
-
-          <div class="col-lg-9">
-            <div class="ratio ratio-1x1">
-            <iframe src = "https://salexir.shinyapps.io/cd_app/#" allowfullscreen></iframe>
-  
-          
           </div>
-          </div>
-      
 
-          <div class="col-lg-3">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: R Stuff</li>
-                <li><strong>Goal</strong>: A data web app/dashboard</li>
-                <li><strong>Project date</strong>: 2019</li>
-                <li><strong>Project URL</strong>: <a href="https://salexir.shinyapps.io/cd_app/#">Permalink @ shinyapps.io</a></li>
-              </ul>
+          <div class="col-lg-10 vh-80 shadow bg-body rounded hide-scrollbars">
+
+            <div data-bs-spy="scroll" data-bs-target="#intro" data-bs-offset="0" tabindex="0">
+
+              <section class="section-title p-5">
+
+                <h2>An RShiny GIS Dashboard</h2>
+
+                <p> This is a sanitized (and StarCraft-ified! 🦗👨‍🚀👽) version of a data tool that I created.</p>
+                <ul>
+                  <li>We had to show both population level variables as shades (choro- part) as well as programmatic spending for each of the regions under study.</li>
+                  <li>This was a fairly scalable solution, allowing us to update it with data over a few years. </li>
+                  <li>Depending on user input, it would re-aggregate programmatic spend given region/custom programs selected.</li>
+                  <li>It had to fill a niche that PowerBI didn't play in (back in 2018 at least): GIS overlays with two different layers.</li>
+                  <li><strong>Project URL</strong>: <a href="https://salexir.shinyapps.io/cd_app/#">Permalink @ shinyapps.io</a></li>
+
+                  
+                </ul>
+
+              <p>This is hosted by shiny.apps.io, so it might take a second to start up (or I've ran out of compute hours). </i></p>
+
+              <br>
+
+
+                  <div class="container ratio ratio-16x9">
+                  <iframe class = "shadow" src = "https://salexir.shinyapps.io/cd_app/#" allowfullscreen></iframe>
+
+                </div>
+  </section>
+
+              </div>
+
+              
+
             </div>
-            <div class="portfolio-description">
-              <h2>Description</h2>
-              <p>This is a sanitized (and StarCraft-ified! 🦗👨‍🚀👽) version of a data tool that I created. <br><br>We had to show both population level variables as shades (choro- part) as well as programmatic spending for each of the regions under study.</p>
-              <p>This was a fairly scalable solution, allowing us to update it with data over a few years. It had to fill a niche that PowerBI didn't play in (back in 2018 at least): GIS overlays  .</p>
-              <p>Do reach out if it's down</p>       </div>
+
           </div>
+
+          <div class="col-lg-1">
+            &nbsp;
+
+          </div>
+
 
         </div>
-
+      
       </div>
+  
     </section><!-- End Portfolio Details Section -->
 
   </main><!-- End #main -->
