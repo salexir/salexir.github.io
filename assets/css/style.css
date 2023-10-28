@@ -1182,3 +1182,77 @@ section {
   color: #37b3ed;
   text-decoration: none;
 }
+
+
+.add-border {
+
+  border:#040b14;
+  border-width: thick;
+  border-style: solid;
+
+}
+
+.hljs{
+  background: #ecf0f5;
+}
+
+
+.vh-80{
+  height: 80vh;
+}
+
+.vh-90{
+  height: 90vh;
+}
+
+.w-80{
+
+  width: 80%;
+
+}
+
+.hide-scrollbars{
+
+  overflow-y: hidden;
+
+}
+
+.hide-scrollbars:hover{
+  
+  overflow-y: scroll;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+} 	
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d2caca;
+}
+
+.blue-titles h1 {
+  font-size: 3vh;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #1d1f21;
+}
+
+.blue-titles h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 5px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
